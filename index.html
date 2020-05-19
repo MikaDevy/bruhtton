@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Bruhtton</title>
+    <style>
+        .btn{
+            border-radius:50%;
+            border-color:lightblue;
+            padding:110px;
+            margin:2px,4px;
+            background-color:lightsteelblue;
+            color:white;
+            text-align:center;
+            font-size:15px;
+        }
+
+        .btn-holder{
+            text-align:center;
+        }
+
+        h1{
+            font-size:24px;
+            font-family:Calibri;
+            text-align:center;
+        }
+
+        p{
+            font-family:Calibri;
+            text-align:center;
+        }
+
+        .footer{
+            text-align:center;
+            font-family:Calibri;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        function playSong() {
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+    </script>
+    <div class="title">
+        <h1>The Bruhtton</h1>
+        <p>Press to bruh!</p>
+    </div>
+    <div class="btn-holder">
+        <button onclick="playSong()" class="btn">Bruh</button>
+        <audio id="audio">
+            <source src="bruh.ogg" type="audio/ogg" />
+        </audio>
+    </div>
+    <div class="footer">
+        <footer>&copy; Mika 2020</footer>
+    </div>
+</body>
+</html>
